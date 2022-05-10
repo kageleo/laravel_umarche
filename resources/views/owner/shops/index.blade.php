@@ -31,7 +31,7 @@
                                             <img src="{{ asset('storage/shops/'.$shop->filename) }}">
                                         @endif
                                     </div> -->
-                                    <x-shop-thumbnail :filename="$shop->filename" />
+                                    <x-thumbnail :filename="$shop->filename" type="shops" />
                                 </div>
                             </a>
                         </div>
