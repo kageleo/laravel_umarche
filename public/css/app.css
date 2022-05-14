@@ -801,11 +801,11 @@ select {
 .w-48 {
   width: 12rem;
 }
-.w-16 {
-  width: 4rem;
-}
 .w-1\/4 {
   width: 25%;
+}
+.w-16 {
+  width: 4rem;
 }
 .max-w-6xl {
   max-width: 72rem;
@@ -864,6 +864,9 @@ select {
 }
 .flex-col {
   flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
