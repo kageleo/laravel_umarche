@@ -725,6 +725,9 @@ select {
 .mt-32 {
   margin-top: 8rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -821,14 +824,14 @@ select {
 .w-6 {
   width: 1.5rem;
 }
+.w-40 {
+  width: 10rem;
+}
 .w-48 {
   width: 12rem;
 }
 .w-1\/4 {
   width: 25%;
-}
-.w-40 {
-  width: 10rem;
 }
 .w-16 {
   width: 4rem;
@@ -1075,6 +1078,10 @@ select {
 }
 .fill-current {
   fill: currentColor;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-6 {
   padding: 1.5rem;
@@ -1824,12 +1831,28 @@ select {
     margin-bottom: 1.5rem;
   }
 
+  .md\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .md\:w-3\/12 {
+    width: 25%;
+  }
+
+  .md\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .md\:w-2\/12 {
+    width: 16.666667%;
   }
 
   .md\:w-2\/3 {
