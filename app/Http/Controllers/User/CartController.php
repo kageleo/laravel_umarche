@@ -71,7 +71,7 @@ class CartController extends Controller
                 $lineItem = [
                     'name' => $product->name,
                     'description' => $product->information,
-                    'unit_amount' => $product->price,
+                    'amount' => $product->price,
                     'currency' => 'jpy',
                     'quantity' => $product->pivot->quantity,
                 ];
@@ -87,12 +87,11 @@ class CartController extends Controller
             ]);
         }
 
-        dd('test');
 
         \Stripe\Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
 
         $session = \Stripe\Checkout\Session::create([
-            'line_Items' => [$lineItems],
+            'line_items' => $lineItems,
             'mode' => 'payment',
             'success_url' => route('user.items.index'),
             'cancel_url' => route('user.cart.index'),
