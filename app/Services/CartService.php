@@ -29,7 +29,7 @@ class CartService
 
             
         }
-        dd($products);
+
         return $products; //新しい配列を返す
     }
 }
